@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF8DC"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/tv_roundRemaining"
+        android:layout_marginTop="10dp"
+        android:text="Rounds Remaining: "
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textColor="#663E65"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="5dp"
+        android:id="@+id/layoutA"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="player A:"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textColor="#663E65"
+                android:id="@+id/tv_playerA"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score:"
+                android:textAllCaps="true"
+                android:textSize="15sp"
+                android:textColor="#663E65"
+                android:id="@+id/tv_scoreA"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="rock"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/bt_rock"
+            android:background="#F5DEB3"
+            android:textColor="#663E35"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="paper"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/bt_paper"
+            android:background="#F5DEB3"
+            android:textColor="#663E35"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="scissor"
+            android:id="@+id/bt_scissor"
+            android:background="#F5DEB3"
+            android:textColor="#663E35"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:orientation="vertical"
+            android:id="@+id/picLayoutA">
+
+            <ImageView
+                android:id="@+id/imageViewA"
+                android:layout_width="200dp"
+                android:layout_height="174dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Winner"
+            android:id="@+id/tv_result"
+            android:textAllCaps="true"
+            android:textSize="24sp"
+            android:textColor="#663E35"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:orientation="vertical"
+            android:id="@+id/picLayoutB">
+
+            <ImageView
+                android:id="@+id/imageViewB"
+                android:layout_width="200dp"
+                android:layout_height="174dp"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:id="@+id/layoutB"
+        android:layout_marginTop="12dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="player B:"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textColor="#663E65"
+                android:id="@+id/tv_playerB"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score:"
+                android:textAllCaps="true"
+                android:textSize="15sp"
+                android:textColor="#663E65"
+                android:id="@+id/tv_scoreB"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="rock"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/bt_rock2"
+            android:background="#F5DEB3"
+            android:textColor="#663E35"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="paper"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/bt_paper2"
+            android:background="#F5DEB3"
+            android:textColor="#663E35"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="scissor"
+            android:id="@+id/bt_scissor2"
+            android:background="#F5DEB3"
+            android:textColor="#663E35"/>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#663E35"
+        android:id="@+id/bt_next"
+        android:text="Continue"
+        android:background="#f5DEB3"
+        android:layout_marginTop="25dp"/>
+
+</LinearLayout>
