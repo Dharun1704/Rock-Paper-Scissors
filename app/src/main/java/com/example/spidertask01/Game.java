@@ -28,7 +28,6 @@ public class Game extends AppCompatActivity {
     ImageView iv_playerA,iv_playerB;
     TextView rounds,scoreA,scoreB,playerA,playerB,result;
 
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -104,7 +103,6 @@ public class Game extends AppCompatActivity {
         stone2.setOnClickListener(btnClickedB);
         paper2.setOnClickListener(btnClickedB) ;
         scissor2.setOnClickListener(btnClickedB);
-
     }
 
     public String calculate(int a,int b){
@@ -396,5 +394,4 @@ public class Game extends AppCompatActivity {
         super.onBackPressed();
         resetScore();
     }
-
 }
