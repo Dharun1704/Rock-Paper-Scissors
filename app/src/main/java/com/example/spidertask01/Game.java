@@ -71,6 +71,7 @@ public class Game extends AppCompatActivity {
         round = ROUND.getInt("round",0);
 
         if(temp == 0) {
+
             round = Integer.parseInt(Objects.requireNonNull(detail.getString("rounds")));
 
             ROUND = getSharedPreferences("Rounds",MODE_PRIVATE);
@@ -340,7 +341,7 @@ public class Game extends AppCompatActivity {
                     strA = strA + "\nScore "+winA+"\t\t:\t\t"+winB;
                     result.setText(strA);
                 }
-                else if(winA==winB) {
+                else {
                     strA = "Tournament draw!";
                     strA = strA + "\nScore "+winA+"\t\t:\t\t"+winB;
                     result.setText(strA);
