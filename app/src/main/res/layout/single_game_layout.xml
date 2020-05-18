@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#FFF8DC"
-    android:id="@+id/layoutGame"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/layoutGame"
         android:orientation="vertical">
 
     <TextView
